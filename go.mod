@@ -1,4 +1,4 @@
-module github.com/LordPax/sockevent.git
+module github.com/LordPax/sockevent
 
 go 1.22.5
 
