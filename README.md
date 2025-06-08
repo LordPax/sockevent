@@ -1,14 +1,14 @@
-# sockevent
+# Sockevent
 
 ## Description
 
-A simple and powerful Go library for managing WebSocket connections, clients, and rooms.
+A simple Go library for managing WebSocket connections, clients, and rooms inspired by the socket.io library.
 
 ## Features
 
-- Easy WebSocket connection management
+- WebSocket connection management
 - Customizable event system
-- Client management with data storage
+- Client management with data context
 - Room creation and management
 
 ## Installation
@@ -16,6 +16,10 @@ A simple and powerful Go library for managing WebSocket connections, clients, an
 ```bash
 go get github.com/LordPax/sockevent
 ```
+
+## Example of project
+
+- [golang-api-template](https://github.com/LordPax/golang-api-template/blob/master/websockets/websocket.go)
 
 ## Quick Start
 
@@ -90,6 +94,9 @@ room := ws.Room("room-name")
 
 // Add a client to a room
 room.AddClient(client)
+
+// Remove a client from a room
+room.RemoveClient(client)
 
 // Send a message to all clients in a room
 room.Emit("announcement", "Message for everyone in the room")
