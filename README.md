@@ -28,7 +28,7 @@ package main
 
 import (
     "net/http"
-    "github.com/your-username/go-websocket-lib/sockevent"
+    "github.com/LordPax/sockevent"
 )
 
 func main() {
