@@ -241,6 +241,7 @@ func TestWebsocket_EmitError(t *testing.T) {
 	url := "ws" + strings.TrimPrefix(server.URL, "http")
 	conn, _, err := websocket.DefaultDialer.Dial(url, nil)
 	assert.NoError(t, err)
+	time.Sleep(100 * time.Millisecond)
 
 	err = ws.EmitError("test error")
 	assert.NoError(t, err)
